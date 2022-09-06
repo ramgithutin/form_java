@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Arial,sans-serif;
+}
+h1{
+	margin: 10px 0px 0px 10px;
+}
+h2{
+	text-decoration: underline;
+	margin: 10px;
+}
+form{
+	background-color: aliceblue;
+}
+.block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.block .input input{
+	margin:0px;
+}
+.input{
+	padding-top: 10px;
+	margin: 10px 0px 0px 10px;
+}
+.input input{
+	margin-left: 10px;
+}
+.input span{
+	margin-left: 10px;
+}
+form textarea {
+	display: flex;
+	margin-left: 10px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+	
+.input2{
+	display: flex;
+	margin: 10px 0px 0px 10px;
+	align-items: center;
+}
+.submit{
+	margin: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.submit button{
+	font-size: 17px;
+}

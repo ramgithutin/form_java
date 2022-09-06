@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <h2>Personal Details</h2>
+   <div id="error"></div>
+   <form id="form"action="#" method="GET">
+    <div class="input">
+      <ladel for="userId">User Id<label>
+      <input id="userId" name="'UserID" type="text" size="10">
+    </div>
+    <div class="input">
+      <ladel for="password">password<label>
+      <input id="password" name="password" type="password" size="12">
+    </div>
+    <div class="block">
+      <div class="input">
+        <ladel for="name">First Name<label>
+        <input  name="name" placeholder="enter your name" type="text">
+      </div>
+      <div class="input">
+        <ladel for="name">Middle Name<label>
+        <input name="name" placeholder="enter your name" type="text">
+      </div>
+      
+      <div class="input">
+        <ladel for="name">Last Name<label>
+        <input  name="name" placeholder="enter your name" type="text">
+      </div>
+    </div>
+    <div class="input">
+      <ladel for="dateOfBrith">DOB<label>
+      <input  name="dateOfBrith"  type="date"/>
+    </div>
+    <div class="input">
+    <input type="radio" name="size" value="S" id="s">
+    <label for="s">male</label>
+    <input type="radio" name="size" value="L" id="l">
+    <label for="l">Female</label>
+    </div>
+    <div class="input">
+      <label for="address">address</label>
+      <input type="text" name="address" size="50">
+    </div>
+    <div class="input">
+      <label for="country">Country</label>
+      <select name="country">
+        <option selected="" value="Default">(Please select a country)</option>
+        <option value="AF">Australia</option>
+        <option value="AL">Canada</option>
+        <option value="DZ">India</option>
+        <option value="AS">Russia</option>
+        <option value="AD">USA</option>
+      </select>
+    </div>
+    <div class="input">
+      <ladel for="email">Email Id<label>
+      <input  name="email" placeholder="eg:-xyz@gmail.com" type="email"/>
+    </div>
+    <div class="input">
+      <ladel for="number">Contact No.<label>
+      <input  name="number" placeholder="enter your number" type="number" size="2">
+    </div>
+    <div class="input">
+      <label>Language</label>
+      <input type="checkbox" name="en" value="en" checked/><span>English</span>
+      <input type="checkbox" name="nonen" value="nonen"/><span>Other</span>
+    </div>
+    <div class="input2">
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="com" ></textarea>
+    </div>
+    <div class="submit">
+     <button type="submit"> submit</button>
+    </div>
+  </form>
+  </body>
