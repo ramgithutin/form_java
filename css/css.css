@@ -6,6 +6,12 @@ body{
 	font-family:Arial,sans-serif;
 }
 h1{
+	text-align: center;
+	margin: 20px;
+	text-decoration: underline;
+	color: blue;
+}
+h2{
 	margin: 10px 0px 0px 10px;
 }
 h2{
@@ -14,44 +20,50 @@ h2{
 }
 form{
 	background-color: aliceblue;
+	margin:200px;
+	margin-top: 20px;
+	border-radius:10px;;
 }
-.block{
-	display: flex;
+.flex{
 	align-items: center;
 	justify-content: space-between;
 }
-.block .input input{
-	margin:0px;
-}
-.input{
-	padding-top: 10px;
-	margin: 10px 0px 0px 10px;
-}
-.input input{
-	margin-left: 10px;
-}
-.input span{
-	margin-left: 10px;
-}
-form textarea {
+.name{
 	display: flex;
-	margin-left: 10px;
-	width: 300px;
-	padding-bottom: 10px;
+	justify-content: space-between;
 }
-	
-.input2{
-	display: flex;
-	margin: 10px 0px 0px 10px;
-	align-items: center;
+input{
+	margin:10px;
+}
+label{
+	margin-left: 10px;
+}
+button{
+	font-size: 15px;
 }
 .submit{
-	margin: 20px;
-	padding-bottom: 20px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+    justify-content: center;
+    padding: 20px;
 }
-.submit button{
-	font-size: 17px;
+/* .error{
+	color: red;
+	margin-left: 10px;
+} */
+.addressDetailing{
+	display: flex;
+	align-items: c
+	enter;
+}
+.control input:focus{
+	outline: 0;
+}
+.control.success input{
+	color: #09c372;
+}
+.control.error input{
+	border-color: #ff3860;
+}
+.control.error {
+	color: #ff3860;
 }
