@@ -1,69 +1,88 @@
-*{
-	margin:0;
-	padding:0;
+* {
+	margin: 0;
+	padding: 0;
 }
-body{
-	font-family:Arial,sans-serif;
+
+body {
+	font-family: 'Poppins', sans-serif;
 }
-h1{
+
+h1 {
 	text-align: center;
 	margin: 20px;
 	text-decoration: underline;
 	color: blue;
 }
-h2{
+
+h2 {
 	margin: 10px 0px 0px 10px;
 }
-h2{
+
+h2 {
 	text-decoration: underline;
 	margin: 10px;
 }
-form{
-	background-color: aliceblue;
-	margin:200px;
+
+#form {
+	width: 300px;
+	margin: 1vh auto 0 auto;
+	padding: 20px;
+	background-color: whitesmoke;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+#form h1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.control {
 	margin-top: 20px;
-	border-radius:10px;;
 }
-.flex{
-	align-items: center;
+
+.control1 {
+	display: flex;
+	margin-top: 20px;
 	justify-content: space-between;
 }
-.name{
-	display: flex;
-	justify-content: space-between;
+
+.control input,
+.control textarea,
+.control1 input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
 }
-input{
-	margin:10px;
-}
-label{
-	margin-left: 10px;
-}
-button{
-	font-size: 15px;
-}
-.submit{
-	display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-/* .error{
-	color: red;
-	margin-left: 10px;
-} */
-.addressDetailing{
-	display: flex;
-	align-items: c
-	enter;
-}
-.control input:focus{
+
+.control input,
+.control textarea,
+.control1 input :focus {
 	outline: 0;
+
 }
-.control.success input{
-	color: #09c372;
+
+.control.success input,
+.control.success textarea {
+	border-color: #09c372;
 }
-.control.error input{
+
+.control.error input,
+.control.error textarea {
 	border-color: #ff3860;
+
 }
-.control.error {
-	color: #ff3860;
+
+.control1 .error,
+.control .error {
+	color: rgb(233, 14, 14);
+	font-size: 8px;
+
+}
+
+.submit {
+	text-align: center;
+	margin-top: 30px;
 }

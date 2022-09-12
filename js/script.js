@@ -35,6 +35,8 @@ const isValidNum = num => {
 	return re.test(num);
 }
 
+
+
 const isValidEmail = email => {
 	const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
@@ -47,7 +49,10 @@ const validateInputs = () => {
 	const passwordValue = password.value.trim();
 	const numValue = num.value.trim();
 	const addressValues = address.value.trim();
+    var msex = document.getElementById("rd1");
+    var fsex = document.getElementById("rd2");
 
+	
 	if (fnameValue === '') {
 		setError(fname, 'First Name is required');
 	} else {
@@ -67,10 +72,10 @@ const validateInputs = () => {
 	} else {
 		setSuccess(email);
 	}
-	if (addressValues === '') {
+	if (addressValues == '') {
 		setError(address, 'address is required');
 	} else {
-		setSuccess(email);
+		setSuccess(address);
 	}
 
 	if (passwordValue === '') {
@@ -87,6 +92,12 @@ const validateInputs = () => {
 		setError(num, "Provide a valid phone number");
 	} else {
 		setSuccess(num);
+	}
+	if(msex.checked == true || fsex.checked == true){
+		setSuccess(msex);
+	}
+	else{
+		setError(msex,"select any one");
 	}
 
 };

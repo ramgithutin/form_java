@@ -14,8 +14,8 @@
         <h2>Registeration Form</h2>
         <div class="name">
           <div class="control">
-            <div class="error"></div>
             <label for="fname">First Name: </label>
+            <div class="error"></div>
             <input id="fname" name="fname" type="text">
           </div>
           <div class="control">
@@ -23,42 +23,40 @@
             <input id="Mname" name="Mname" type="text">
           </div>
           <div class="control">
-            <div class="error"></div>
             <label for="lname">Last Name: </label>
+            <div class="error"></div>
             <input id="lname" name="lname" type="text">
           </div>
         </div>
-        <div class="control">
+        <div class="control1">
           <label id="gender">Sex:</label>
-          <input type="radio" name="msex" value="Male" />
+          <div class="error"></div>
+          <input id="rd1" type="radio" name="sex" value="Male" />
           <span>Male</span>
-          </li>
-          <input type="radio" name="fsex" value="Female" />
+          <input id="rd2" type="radio" name="sex" value="Female" />
           <span>Female</span>
         </div>
         <div class="control">
-          <div class="error"></div>
           <label for="email">Email:</label>
+          <div class="error"></div>
           <input id="email" name="email" type="text">
         </div>
         <div class="control">
-          <div class="addressDetailing">
-            <div class="error"></div>
-            <label for="address">Address:</label>
-            <textarea name="address" id="address"></textarea>
-          </div>
+          <label for="address">Address:</label>
+          <div class="error"></div>
+          <textarea name="address" id="address"></textarea>
         </div>
         <div class="control">
-          <div class="error"></div>
           <label for="num">Contact no:</label>
+          <div class="error"></div>
           <input id="num" name="password" type="number">
         </div>
         <div class="control">
-          <div class="error"></div>
           <label for="password">Password:</label>
+          <div class="error"></div>
           <input id="password" name="password" type="password">
         </div>
-        <div class="control">
+        <div class="control1">
           <label>Know Language:</label>
           <input type="checkbox" name="en" value="en" checked />
           <span>English</span>
@@ -67,15 +65,17 @@
           <input type="checkbox" name="nonen" value="noen" />
           <span>Malayalam</span>
         </div>
-        <label>country</label>
-        <select name="country">
-          <option selected="" value="Default">(select a country)</option>
-          <option value="AF">Australia</option>
-          <option value="AL">Canada</option>
-          <option value="DZ">India</option>
-          <option value="AS">Russia</option>
-          <option value="AD">USA</option>
-        </select>
+        <div class="control">
+          <label>country</label>
+          <select name="country">
+            <option selected="" value="Default">(select a country)</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+          </select>
+        </div>
         <div class="submit">
           <button type="submit">Sign Up</button>
         </div>
