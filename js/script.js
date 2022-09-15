@@ -49,10 +49,10 @@ const validateInputs = () => {
 	const passwordValue = password.value.trim();
 	const numValue = num.value.trim();
 	const addressValues = address.value.trim();
-    var msex = document.getElementById("rd1");
-    var fsex = document.getElementById("rd2");
+	var msex = document.getElementById("rd1");
+	var fsex = document.getElementById("rd2");
 
-	
+	console.log(msex.value);
 	if (fnameValue === '') {
 		setError(fname, 'First Name is required');
 	} else {
@@ -93,11 +93,10 @@ const validateInputs = () => {
 	} else {
 		setSuccess(num);
 	}
-	if(msex.checked == true || fsex.checked == true){
+	if (msex.checked == true || fsex.checked == true) {
 		setSuccess(msex);
-	}
-	else{
-		setError(msex,"select any one");
+	} else {
+		setError(msex, "select any one");
 	}
 
 };
